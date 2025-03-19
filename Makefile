@@ -8,13 +8,12 @@ install:
 
 # Ajusta aquí tu comando de backend
 start-backend:
-	npx --no-install --package @hexlet/chat-server start-server --port 5001 --static ./frontend/build
+	npx start-server -s ./dist -p 5001
 
 start-frontend:
-	make -C frontend start
+	make -C frontend start-frontend
 
 start:
-	make start-backend & make start-frontend
-
+	make -C frontend start
 build:
 	make -C frontend build
