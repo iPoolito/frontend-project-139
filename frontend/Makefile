@@ -12,4 +12,4 @@ lint:
 	npx eslint .
 
 start-frontend:
-	npx start-server -s ./dist
+	npx start-server -s ./build
