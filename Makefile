@@ -8,7 +8,7 @@ install:
 
 # Ajusta aquí tu comando de backend
 start-backend:
-	npx start-server -s ./build -p 5001
+	npx start-server -s ./dist -p 5001
 
 start-frontend:
 	make -C frontend start-frontend
