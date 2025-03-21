@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import AppRoutes from '../routes.js';
 
 import 'react-toastify/dist/ReactToastify.css';
+import ChatNavbar from './Navbar/ChatNavbar.jsx';
 
 const App = () => (
   <div className="App">
@@ -15,6 +16,7 @@ const App = () => (
       <ToastContainer />
 
       {/* Tus rutas definidas en routes.js */}
+      <ChatNavbar />
       <AppRoutes />
     </BrowserRouter>
   </div>
