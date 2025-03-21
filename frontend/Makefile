@@ -12,4 +12,4 @@ lint:
 	npx eslint .
 
 start-frontend:
-	npm run dev
+	npx start-server -s ./dist
