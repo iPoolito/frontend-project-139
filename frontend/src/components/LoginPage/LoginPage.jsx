@@ -1,3 +1,4 @@
+// frontend/src/components/LoginPage/LoginPage.jsx
 import React, { useState } from 'react';
 import {
   Formik, Form, Field, ErrorMessage,
@@ -36,7 +37,7 @@ const LoginPage = () => {
       logIn(token, returnedUser);
       navigate('/');
     } catch (error) {
-      setAuthError(t('invalidFeedback'));
+      setAuthError(t('errors.invalidFeedback'));
     } finally {
       setSubmitting(false);
     }
@@ -56,7 +57,8 @@ const LoginPage = () => {
         {({ isSubmitting }) => (
           <Form>
             <div>
-              <label htmlFor="username">{t('placeholders.username')}</label>
+              {/* 👇 Aseguramos que el texto sea visible para Playwright */}
+              <label htmlFor="username">{t('placeholders.login')}</label>
               <Field id="username" name="username" type="text" />
               <ErrorMessage name="username" component="div" />
             </div>

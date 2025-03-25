@@ -22,8 +22,8 @@ const en = {
     reauthorization: 'Re-authenticate',
 
     regRules: {
-      name: 'From 3 to 20 characters',
-      password: 'At least 6 characters',
+      name: 'Must be from 3 to 20 characters',
+      password: 'Must be > 6 characters',
       passwordEquality: 'Passwords must match',
     },
 
@@ -62,7 +62,7 @@ const en = {
     },
 
     errors: {
-      invalidFeedback: 'Invalid username or password',
+      invalidFeedback: 'Username or password are incorrect',
       userExist: 'This user already exists',
       required: 'Required field',
       network: 'Connection error',
