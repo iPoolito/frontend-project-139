@@ -57,12 +57,14 @@ const Add = () => {
       <div className="modal">
         <h2>{t('modal.add')}</h2>
         <form onSubmit={handleSubmit}>
+          <label className="visually-hidden" htmlFor="name">{t('modal.channelName')}</label>
           <input
             ref={inputRef}
             type="text"
             value={channelName}
             onChange={(e) => setChannelName(e.target.value)}
             placeholder={t('modal.channelName')}
+            name='name'
           />
           <button type="submit">{t('send')}</button>
           <button type="button" onClick={handleCancel}>{t('cancel')}</button>
