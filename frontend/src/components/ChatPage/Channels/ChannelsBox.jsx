@@ -47,7 +47,7 @@ const ChannelsBox = () => {
               {' '}
               {ch.name}
             </button>
-
+            <span className="visually-hidden">{t('modal.menu')}</span>
             {ch.removable && (
               <span style={{ marginLeft: '10px' }}>
                 <button type="button" onClick={() => handleRemoveChannel(ch.id)}>
