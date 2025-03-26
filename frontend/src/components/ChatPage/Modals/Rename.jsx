@@ -65,8 +65,8 @@ const Rename = () => {
             value={newName}
             onChange={(e) => setNewName(e.target.value)}
             placeholder={t('modal.channelName')}
-            name='name'
-            id='name'
+            name="name"
+            id="name"
           />
           <label className="visually-hidden" htmlFor="name">{t('modal.channelName')}</label>
           <button type="submit">{t('modal.rename')}</button>

@@ -54,7 +54,7 @@ const SignupPage = () => {
       {errors.length > 0 && (
         <div style={{ color: 'red' }}>
           {errors.map((err, i) => (
-            <div key={i}>{err}</div>
+            <div key={`${i + 1}`}>{err}</div>
           ))}
         </div>
       )}
